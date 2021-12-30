@@ -8,4 +8,11 @@ use Illuminate\Database\Eloquent\Model;
 class Audio extends Model
 {
     use HasFactory;
+
+    protected $dates = [
+        'converted_for_downloading_at',
+        'converted_for_streaming_at',
+    ];
+
+    protected $guarded = [];
 }
